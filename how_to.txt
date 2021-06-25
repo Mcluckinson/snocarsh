@@ -61,7 +61,7 @@ create echo with getflag inside
 add /tmp/ to path: export PATH=/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 (the rest is old path)
 dont forget chmod 777 on new echo
-done, level03 not launches getflag
+done, level03 doesnt launch getflag
 flag: qi0maab88jeaj46qoumi7maus
 
 
@@ -178,3 +178,41 @@ LEVEL11:
 nc localhost 5151 - слушать порт, хуяк, она просит пароль
 
 flag: fa6v5ateaw21peobuub8ipe6s
+
+
+
+==================================================
+
+
+LEVEL12:
+обоссаный перл делает свою хуйню в коде
+кароч как в прошлом задании в порт из скрипта надо сунуть этот блядский скрипт с аргументом
+этой залупе надо сунуть аргумент из файла, в файле echo $(getflag) > /tmp/SUKA
+адрес со звездой чтобы скрипт не обосрал капсом путь к файлу
+
+flag: g1qKMiRpXf53AWhDaU7FEkczr
+
+
+==================================================
+
+
+LEVEL13:
+set breakpoint in getuid
+set eax to 4242
+token: 2A31L79asukciNyi8uppkEuSx
+
+
+
+==================================================
+
+
+LEVEL14:
+flag14 id = 3014;
+set brkpnt in getflag at ptrace
+set brkpnt in getflag in getuid
+set eax to 1
+set eax to 3014
+
+token =  7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+flag: 7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ
+
