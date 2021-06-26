@@ -1,0 +1,6 @@
+
+check da script
+once launched it works at port 5151
+check da code
+
+nc localhost 5151 - da cool get flag 4 passwd

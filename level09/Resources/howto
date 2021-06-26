@@ -1,0 +1,19 @@
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <strings.h>
+#include <string.h>
+int main(int ac, char **av)
+{
+        int fd = open(av[1], O_RDONLY);
+        char pepe[30];
+        bzero(pepe, 30);
+        read(fd, pepe, 30);
+        int i = -1;
+        while (++i < strlen(pepe))
+        {
+                printf("%c", pepe[i] - i);
+        }
+        return (0);
+
+}

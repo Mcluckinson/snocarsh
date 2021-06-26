@@ -1,0 +1,2 @@
+set breakpoint in getuid
+set eax to 4242

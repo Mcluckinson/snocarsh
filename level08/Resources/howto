@@ -1,0 +1,2 @@
+ln -s ~/token /tmp/kek && ./level08 /tmp/kek
+passwd for flag08: quif5eloekouj29ke0vouxean

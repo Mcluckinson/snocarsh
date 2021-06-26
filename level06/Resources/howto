@@ -1,0 +1,7 @@
+shitty php script and an excutable
+php script changing and printing stuff through regexp
+executable uses the script and a file as an arg
+create file that matches regexp:
+/tmp/pepe: echo '[x ${`getflag`}]'
+launch binary with file
+warning will give token

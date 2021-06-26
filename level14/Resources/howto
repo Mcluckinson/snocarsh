@@ -1,0 +1,7 @@
+
+LEVEL14:
+flag14 id = 3014;
+set brkpnt in getflag at ptrace
+set brkpnt in getflag in getuid
+set eax to 1
+set eax to 3014

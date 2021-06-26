@@ -1,0 +1,15 @@
+its a binary saying exploit me
+
+usr/bin/env echo Exploit me is what it does
+
+in /tmp we can create an echo of our own which is what we do
+
+create echo with getflag inside
+
+add /tmp/ to path: export PATH=/tmp:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/
+sbin:/bin:/usr/games
+(the rest is old path)
+
+dont forget chmod 777 on new echo
+
+done, level03 doesnt launch getflag

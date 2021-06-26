@@ -1,0 +1,5 @@
+script kinda similar to previous
+however it needs getflag to be in a script file because it turns all leters in uppercase
+create this script:
+echo $(getflag) > /tmp/SUKA
+give path with /*/ so the path doesnt get fucked up

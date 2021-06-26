@@ -1,0 +1,7 @@
+scp -P 60023 level02@127.0.0.1:/home/user/level02/level02.pcap pepega.pcap
+
+tshark -r pepega.pcap
+
+tshark -r pepega.pcap -z"follow,tcp,ascii,0" or same but hex
+
+passwd: ft_waNDReL0L
